@@ -1,0 +1,23 @@
+{
+  "name": "bill-unattended-test",
+  "version": "0.1",
+  "homepage": "https://github.com/nowarkdev/bill-unattended-test",
+  "authors": [
+    "Lorenzo Campanis <info@lcampanis.com>"
+  ],
+  "description": "Sky",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "moment": "~2.10.6"
+  }
+}

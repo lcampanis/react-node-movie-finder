@@ -8,6 +8,7 @@
     "postinstall": "jspm install"
   },
   "jest": {
+    "rootDir": "./",
     "scriptPreprocessor": "./preprocessor.js",
     "testPathIgnorePatterns": [
       "/node_modules/",
@@ -27,7 +28,9 @@
     "gulp-react": "^3.0.1",
     "gulp-shell": "^0.4.1",
     "harmonize": "^1.4.1",
+    "is-file": "^1.0.0",
     "jest-cli": "^0.4.1",
+    "jquery": "^2.1.4",
     "jspm": "^0.15.5",
     "react": "^0.13.2",
     "react-tools": "^0.13.2",

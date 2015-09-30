@@ -21,7 +21,13 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('build', function () {
-  return gulp.src(['app.js', 'scripts/*.js'])
+  return gulp.src([
+        'app.js',
+        'scripts/*.js',
+        'bower_components/jquery/dist/jquery.js',
+        'bower_components/bootstrap/dist/js/bootstrap.js',
+        'bower_components/moment/moment.js'
+    ])
     .pipe(plugins.react())
     .pipe(gulp.dest('components'));
 });

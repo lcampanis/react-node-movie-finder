@@ -1,6 +1,9 @@
 'use strict';
 
 var React = require('react');
-var CheckboxWithLabel = require('components/testComponent');
+var MyBill = require('components/myBill');
 
-React.render(<CheckboxWithLabel labelOn="On" labelOff="Off" />, document.getElementById('view'));
+React.render(
+    <MyBill source="bill.json" />,
+    document.getElementById('container-content')
+);
