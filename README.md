@@ -8,27 +8,40 @@ Seed project for writing ReactJS components in TDD fashion. This seed uses Jest 
 
 Clone this repo and run npm install
 ```
-git clone git@github.com:shidhincr/react-jest-gulp-jspm-seed.git
+git clone https://github.com/lcampanis/react-node-sky-bill.git
 
 npm install
 ```
 
 ## Usage 
 
-There are two main gulp tasks. Run both tasks in two different terminal tabs, so that you can develop the component in TDD way.
+The sample code puts major focus on UX and quality of code.
 
-**Develop**
+## Specs
+The app is built using:
+* ReactJS
+* Bootstrap
+* jQuery (for AJAX loading only)
+* Moment (for date comversion)
 
-```js 
-gulp develop
-```
+Tests are built using:
+* Jest (Facebook's prefered method for ReactJS)
 
-This task will open the browser ( using BrowserSync ) and load the `index.html`. It will then wait for any changes in the scripts folder, and reload the browser.
+It is built as an node module using:
+* Gulp
+* JSPM
+* Babel
 
-**Test**
+## How to run the build & tests
+* Install NodeJS https://nodejs.org/en/
+* Unpack the archive
+* In the terminal `cd sky-test/react-seed`
+* Install Node & Bower modules `npm install && bower install`
 
-```js 
-gulp test
-```
+### To run the build
+Once your in the *react-seed* folder in the terminal, type `gulp develop`.
+This will open a browser window using Gulp, where you can see the page containing a sky.
 
-This task runs the unit tests using `jest`. It will also wait for any changes in the `__tests__` or `scripts` folder to re-run the tests.
+### To run the tests
+Once your in the *react-seed* folder in the terminal, type: `gulp test`.
+This will run the tests in the console using the jest test command from Gulp.
